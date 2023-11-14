@@ -1,36 +1,44 @@
 .subtitle {
     color: #d03535;
-    font-family: "Arial Black";
+    font-family: "Times New Roman", sans-serif;
     text-align:  center;
     border: 4px inset black;
 }
 p {
-    font-family: "Arial Black";
+    font-style: italic;
+    font-family: "Times New Roman", sans-serif;
     text-align:  center;
     border: 4px inset black;
     background: #3d8d88;
 }
 .maintitle {
+    text-transform: uppercase;
+    line-height: 1em;
+    font-size:3em;
+    font-weight: normal;
     background: #bb5151;
-    font-family: Arial;
+    font-family: "Times New Roman", sans-serif;
     border: 4px dotted black;
     margin-bottom: -7px;
     padding: 10px;
     text-align:  center;
 }
 h2 {
-    font-family: Arial;
+    font-family: "Times New Roman", sans-serif;
 }
 h3 {
-    font-family: Arial;
+    text-decoration: underline;
+    font-family: "Times New Roman", sans-serif;
     text-align: center;
+    word-spacing: 0.1em;
 }
 article {
-    font-family: Arial;
+    font-family: "Times New Roman", sans-serif;
     text-align: center;
+    text-indent: 2em;
 }
 ul {
-    font-family: Arial;
+    font-family: "Times New Roman", sans-serif;
     margin-left: 675px;
 }
 .center {
