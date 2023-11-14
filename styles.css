@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
 .subtitle {
     color: #d03535;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Tinos", sans-serif;
     text-align:  center;
     border: 4px inset black;
 }
 p {
     font-style: italic;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Tinos", sans-serif;
+
     text-align:  center;
     border: 4px inset black;
     background: #3d8d88;
@@ -17,28 +19,28 @@ p {
     font-size:3em;
     font-weight: normal;
     background: #bb5151;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Tinos", sans-serif;
     border: 4px dotted black;
     margin-bottom: -7px;
     padding: 10px;
     text-align:  center;
 }
 h2 {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Tinos", sans-serif;
 }
 h3 {
     text-decoration: underline;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Tinos", sans-serif;
     text-align: center;
     word-spacing: 0.1em;
 }
 article {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Tinos", sans-serif;
     text-align: center;
     text-indent: 2em;
 }
 ul {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Tinos", sans-serif;
     margin-left: 675px;
 }
 .center {
