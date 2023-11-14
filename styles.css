@@ -1,0 +1,51 @@
+.subtitle {
+    color: #d03535;
+    font-family: "Arial Black";
+    text-align:  center;
+    border: 4px inset black;
+}
+p {
+    font-family: "Arial Black";
+    text-align:  center;
+    border: 4px inset black;
+    background: #3d8d88;
+}
+.maintitle {
+    background: #bb5151;
+    font-family: Arial;
+    border: 4px dotted black;
+    margin-bottom: -7px;
+    padding: 10px;
+    text-align:  center;
+}
+h2 {
+    font-family: Arial;
+}
+h3 {
+    font-family: Arial;
+    text-align: center;
+}
+article {
+    font-family: Arial;
+    text-align: center;
+}
+ul {
+    font-family: Arial;
+    margin-left: 675px;
+}
+.center {
+    text-align:  center;
+}
+.right {
+    text-align:  right;
+}
+.left {
+    text-align:  left;
+}
+.background_page {
+    background-color: rgb(229, 243, 253);
+}
+.shadow {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
