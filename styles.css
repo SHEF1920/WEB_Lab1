@@ -11,7 +11,19 @@ p {
 
     text-align:  center;
     border: 4px inset black;
-    background: #3d8d88;
+    background: #e0dada;
+}
+section {
+    background-color: #bbb;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
 }
 .maintitle {
     text-transform: uppercase;
@@ -24,6 +36,48 @@ p {
     margin-bottom: -7px;
     padding: 10px;
     text-align:  center;
+}
+.menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    /* Скрытие рекламного баннера на маленьких экранах */
+    .ad-banner {
+        display: none;
+    }
+
+    /* Закрепление строки меню */
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    /* Изменение стилей для мобильных устройств */
+    .main {
+        grid-template-columns: 1fr;
+    }
 }
 h2 {
     font-family: "Tinos", sans-serif;
@@ -57,5 +111,32 @@ ul {
 }
 .shadow {
     filter: drop-shadow(0 0 0.75rem crimson);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
 }
 
