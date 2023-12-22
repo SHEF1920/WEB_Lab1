@@ -13,7 +13,11 @@ p {
     border: 4px inset black;
     background: #e0dada;
 }
+.header {
+}
 section {
+    display: flex;
+    flex-direction: column;
     background-color: #bbb;
     border: 1px solid #ddd;
     padding: 20px;
@@ -78,6 +82,10 @@ section {
     .main {
         grid-template-columns: 1fr;
     }
+    section {
+        flex-direction: row; /* Располагаем элементы в ряд на больших экранах */
+        align-items: center; /* Выравниваем элементы по центру */
+    }
 }
 h2 {
     font-family: "Tinos", sans-serif;
@@ -138,5 +146,28 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: #ddd;
+}
+.grid-table {
+    display: grid;
+    border-collapse: collapse;
+    width: 100%;
+    grid-template-columns:
+            minmax(300px, 2fr)
+    minmax(150px, 1fr)
+    minmax(150px, 1fr);
+}
+
+.grid-table thead {
+    background-color: #f2f2f2;
+}
+
+.grid-table th, .grid-table td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.grid-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
