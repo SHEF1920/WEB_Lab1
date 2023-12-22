@@ -16,8 +16,6 @@ p {
 .header {
 }
 section {
-    display: flex;
-    flex-direction: column;
     background-color: #bbb;
     border: 1px solid #ddd;
     padding: 20px;
@@ -45,6 +43,8 @@ section {
     background-color: #333;
     padding: 10px;
     text-align: center; /* Выравнивание текста по центру */
+    justify-content: center;
+    display: flex;
 }
 
 .menu ul {
@@ -149,6 +149,22 @@ tr:hover {
 }
 .grid-table {
     display: grid;
+    width: 100%;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-cell {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.grid-table {
+    display: grid;
     border-collapse: collapse;
     width: 100%;
     grid-template-columns:
@@ -157,17 +173,4 @@ tr:hover {
     minmax(150px, 1fr);
 }
 
-.grid-table thead {
-    background-color: #f2f2f2;
-}
-
-.grid-table th, .grid-table td {
-    border: 1px solid #dddddd;
-    padding: 12px;
-    text-align: left;
-}
-
-.grid-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
 
