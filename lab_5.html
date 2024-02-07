@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="constructor.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles5.css">
+    <title>Constructor Page</title>
+</head>
+<body>
+<div class="container">
+    <h2>Генератор таблицы</h2>
+    <form id="tableForm">
+        <label for="days">Количество дней в неделе:</label>
+        <input type="number" id="days" name="days" min="1" required><br>
+
+        <label for="maxLessons">Максимальное количество занятий:</label>
+        <input type="number" id="maxLessons" name="maxLessons" min="1" required><br>
+
+        <label for="language">Язык таблицы:</label><br>
+        <input type="radio" id="russian" required> Русский<br>
+        <input type="radio" id="中文" required> Китайский<br>
+
+        <button type="submit">Сгенерировать</button>
+    </form>
+
+    <div id="resultContainer" class="result-container"></div>
+</div>
+</body>
+</html>
