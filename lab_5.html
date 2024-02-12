@@ -3,18 +3,17 @@
 <head>
     <script src="constructor.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles5.css">
-    <title>Constructor Page</title>
+    <title>Constructor</title>
 </head>
-<body>
+<body class="background_page">
 <div class="container">
-    <h2>Генератор таблицы</h2>
+    <h2 class="maintitle">Генератор таблицы</h2>
     <form id="tableForm">
         <label for="days">Количество дней в неделе:</label>
         <input type="number" id="days" name="days" min="1" required><br>
 
-        <label for="maxLessons">Максимальное количество занятий:</label>
+        <label for="maxLessons">Количество занятий:</label>
         <input type="number" id="maxLessons" name="maxLessons" min="1" required><br>
 
         <label for="language">Язык таблицы:</label><br>
@@ -23,7 +22,6 @@
 
         <button type="submit">Сгенерировать</button>
     </form>
-
     <div id="resultContainer" class="result-container"></div>
 </div>
 </body>

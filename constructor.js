@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Обработка события отправки формы
     tableForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
@@ -31,21 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        // Генерация и отображение результата
         const table = generateTable(days, maxLessons, language);
         table.classList.add("generated-table");
 
-        // Очищаем контейнер перед вставкой нового результата
         resultContainer.innerHTML = "";
 
-        // Вставляем таблицу в контейнер
         resultContainer.appendChild(table);
 
-        // Сохранение параметров в локальное хранилище
         saveToLocalStorage({ days, maxLessons, language, tableData: tableTo2DArray(table)});
     });
 
-    // Загрузка параметров из локального хранилища при загрузке страницы
     const savedParams = loadFromLocalStorage();
     if (savedParams) {
         document.getElementById("days").value = savedParams.days;
@@ -83,7 +77,6 @@ function renderStoredTable(dataArray) {
     return table;
 }
 
-// Функция для преобразования таблицы
 function tableTo2DArray(table) {
     const dataArray = [];
     const rows = table.querySelectorAll("tr");
@@ -102,7 +95,6 @@ function tableTo2DArray(table) {
     return dataArray;
 }
 
-// Функция для генерации таблицы
 function generateTable(days, maxLessons, language) {
     const table = document.createElement("table");
     if (language == "russian") {
@@ -121,7 +113,6 @@ function generateTable(days, maxLessons, language) {
             const lessonNumberCell = document.createElement("td");
             const lessonNameCell = document.createElement("td");
 
-
             lessonNumberCell.textContent = j;
             const randomIndex = Math.floor(Math.random() * lessonList.length);
             lessonNameCell.textContent = lessonList[randomIndex];
@@ -132,16 +123,13 @@ function generateTable(days, maxLessons, language) {
 
         table.appendChild(row);
     }
-
     return table;
 }
 
-// Функция для сохранения параметров в локальное хранилище
 function saveToLocalStorage(params) {
     localStorage.setItem("constructorParams", JSON.stringify(params));
 }
 
-// Функция для загрузки параметров из локального хранилища
 function loadFromLocalStorage() {
     const savedParams = localStorage.getItem("constructorParams");
     return savedParams ? JSON.parse(savedParams) : null;
