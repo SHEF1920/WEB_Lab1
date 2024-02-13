@@ -129,7 +129,7 @@ article {
     border-radius: 20px 5px;
     background-color: #c23131;
 }
-.navbar li#active{
+.navbar li.active{
     text-decoration-line: underline;
     text-decoration-color: black;
     text-decoration-thickness: 5px;
