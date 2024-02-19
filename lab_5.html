@@ -11,12 +11,12 @@
     <h2 class="maintitle">Генератор таблицы</h2>
     <form id="tableForm">
         <label for="days">Количество дней в неделе:</label>
-        <input type="number" id="days" name="days" min="1" required><br>
+        <input type="number" id="days" name="days" min="1" max="6" required><br>
 
         <label for="maxLessons">Количество занятий:</label>
-        <input type="number" id="maxLessons" name="maxLessons" min="1" required><br>
+        <input type="number" id="maxLessons" name="maxLessons" min="1" max="10" required><br>
 
-        <label for="language">Язык таблицы:</label><br>
+        <label id="language">Язык таблицы:</label><br>
         <input type="radio" id="russian" required> Русский<br>
         <input type="radio" id="中文" required> Китайский<br>
 

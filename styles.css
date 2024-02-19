@@ -82,6 +82,10 @@ article {
 .center {
     text-align:  center;
 }
+#preloader {
+    justify-content: center;
+    align-items: center;
+}
 .right {
     text-align:  right;
 }
@@ -161,6 +165,75 @@ article {
         align-items: center; /* Выравниваем элементы по центру */
     }
 }
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    padding: 30px;
+    min-height: 100%;
+}
+
+.image-slider {
+    padding: 30px 0 70px 0;
+}
+.image-slider__wrapper {
+
+}
+.image-slider__slide {
+
+}
+.image-slider__image {
+    text-align: center;
+}
+.image-slider__image img {
+    max-width: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    margin: 20px 0;
+    overflow-y: hidden; /* Обрезать изображения, если они не соответствуют размерам слайда */
+    overflow-x: hidden;
+}
+
+.swiper-slide {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 70%;
+    height: 60%;
+    object-fit: cover; /* Сохраняет соотношение сторон изображения и обрезает его, чтобы оно полностью покрывало слайд */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* по умолчанию стили стрелок реализованы с помощью иконочного шрифта и выводятся в псевдо-элемент after */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #333;
+    font-size: 80px;
+}
+
+.swiper-pagination {
+    margin-top: 50px;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+}
+
 
 
 
